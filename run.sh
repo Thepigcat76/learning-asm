@@ -1,3 +1,4 @@
-nasm -f elf64 -o main.o main.asm
-ld -s -o main main.o
-./main
+nasm -f elf64 -o build/main.o src/ex1.asm
+ld -s -o build/main build/main.o
+rm build/main.o
+./build/main
